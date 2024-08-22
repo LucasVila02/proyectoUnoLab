@@ -24,9 +24,9 @@ public class TestTienda {
             cocaCola.aplicarDescuento(10);
             tiendaUno.agregarProducto(cocaCola);
 
-            Envasados atum  =  new Envasados("Atum", 6, 110, 20,false, 1, "12-11-2024", "Vidrio");
-            atum.aplicarDescuento(10);
-            tiendaUno.agregarProducto(atum);
+            Envasados atun  =  new Envasados("Atún", 6, 110, 20,false, 1, "12-11-2024", "Vidrio");
+            atun.aplicarDescuento(10);
+            tiendaUno.agregarProducto(atun);
 
             Envasados choclo  =  new Envasados("Choclo", 6, 140, 20,false, 1, "12-11-2024", "Vidrio");
             choclo.aplicarDescuento(12);
