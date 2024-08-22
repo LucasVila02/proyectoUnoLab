@@ -37,7 +37,7 @@ public class TestTienda {
             Map<Producto, Integer> productosVenta = new HashMap<>();
             productosVenta.put(detergente, 12);
             productosVenta.put(cocaCola, 12);
-            productosVenta.put(atum, 12);
+            productosVenta.put(atun, 12);
             tiendaUno.realizarVenta(productosVenta);
 
             tiendaUno.mostrarBalanceTienda();
@@ -45,7 +45,7 @@ public class TestTienda {
             Map<Producto, Integer> productosVenta1 = new HashMap<>();
             productosVenta1.put(cocaCola, 12);
             productosVenta1.put(detergente, 10);
-            productosVenta1.put(atum, 10);
+            productosVenta1.put(atun, 10);
             tiendaUno.realizarVenta(productosVenta1);
 
             tiendaUno.mostrarBalanceTienda();
