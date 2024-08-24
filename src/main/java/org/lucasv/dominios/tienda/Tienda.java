@@ -1,6 +1,9 @@
-package org.lucasv.entities;
+package org.lucasv.dominios.tienda;
 
-import org.lucasv.entities.productos.*;
+import org.lucasv.dominios.productos.*;
+import org.lucasv.dominios.productosComestibles.Bebida;
+import org.lucasv.dominios.productosComestibles.Envasados;
+import org.lucasv.dominios.productosComestibles.ProductoComestibles;
 
 import java.util.*;
 import java.util.stream.Stream;
@@ -8,7 +11,7 @@ import java.util.stream.Stream;
 public class Tienda {
 
     private String nombre;
-    private int maxProductosStock;
+    private final int maxProductosStock;
     protected double saldoCaja;
     private List<Envasados> listaEnvasados;
     private List<Bebida> listaBebidas;
@@ -43,7 +46,7 @@ public class Tienda {
         return listaTotalProductos;
     }
 
-    public void agregarProducto(Producto producto) {
+    public void comprarProducto(Producto producto) {
 
         int cantidadActual = getCantidadTotalProductos();
         int cantidadMaximaAAgregar = maxProductosStock - cantidadActual;

@@ -1,9 +1,9 @@
-package org.lucasv.entities.productos;
+package org.lucasv.dominios.productosComestibles;
 
 
 public class Envasados extends ProductoComestibles {
 
-    private String tipoEnvase ;
+    private final String tipoEnvase ;
     private static int contadorEnvasado = 100;
 
     public Envasados( String descripcion, int stock, double precioCompra, int porcentajeGanancia, boolean importado, double calorias, String fechaVencimiento, String tipoEnvase) {

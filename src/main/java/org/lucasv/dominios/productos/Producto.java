@@ -1,4 +1,4 @@
-package org.lucasv.entities.productos;
+package org.lucasv.dominios.productos;
 
 public abstract class Producto {
 

@@ -1,8 +1,8 @@
-package org.lucasv.entities.productos;
+package org.lucasv.dominios.productosComestibles;
 
 public class Bebida extends ProductoComestibles {
 
-    private double graduacionAlcoholica;
+    private final double graduacionAlcoholica;
     private static  int contadorEnvasado = 100;
 
     public Bebida( String descripcion, int stock, double precioCompra, int porcentajeGanancia, boolean importado, double calorias, String fechaVencimiento, double graduacionAlcoholica) {

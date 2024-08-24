@@ -1,17 +1,11 @@
-package org.lucasv.entities.productos;
+package org.lucasv.dominios.productos;
+
+import org.lucasv.enums.TipoAplicacion;
 
 public class Limpieza extends Producto {
 
-
-    public enum TipoAplicacion{
-        COCINA,
-        BANIO,
-        ROPA,
-        MULTIUSO
-    }
-
     private static int contadorLimpieza = 100;
-    private TipoAplicacion tipoAplicacion;
+    private final TipoAplicacion tipoAplicacion;
 
     public Limpieza( String descripcion, int stock, double precioCompra, int porcentajeGanancia, boolean importado, TipoAplicacion tipoAplicacion) {
         super( descripcion, stock, precioCompra, porcentajeGanancia, importado);

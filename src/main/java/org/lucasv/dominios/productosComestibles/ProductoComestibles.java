@@ -1,10 +1,12 @@
-package org.lucasv.entities.productos;
+package org.lucasv.dominios.productosComestibles;
+
+import org.lucasv.dominios.productos.Producto;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-public class ProductoComestibles extends Producto  {
+public class ProductoComestibles extends Producto {
 
     protected double calorias;
     protected LocalDate fechaVencimiento;
