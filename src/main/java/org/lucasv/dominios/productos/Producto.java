@@ -101,7 +101,7 @@ public abstract class Producto {
 
     public void aplicarDescuento(double porcentajeDescuento) {
         if (porcentajeDescuento > getPorcentajeMaximoDescuento() || porcentajeDescuento <= 0) {
-            throw new IllegalArgumentException("El descuento debe estar entre 1% y " + getPorcentajeMaximoDescuento() + "%.");
+            throw new IllegalArgumentException("El descuento de " + descripcion +" debe estar entre 1% y " + getPorcentajeMaximoDescuento() + "%.");
         }
 
         double precioOriginal = getPrecioVenta();
