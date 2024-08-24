@@ -46,7 +46,7 @@ public class Tienda {
         return listaTotalProductos;
     }
 
-    public void comprarProducto(Producto producto) {
+    public void realizarCompra(Producto producto) {
 
         int cantidadActual = getCantidadTotalProductos();
         int cantidadMaximaAAgregar = maxProductosStock - cantidadActual;
@@ -81,6 +81,7 @@ public class Tienda {
         System.out.println(producto.getSku() + " " + producto.getDescripcion() + " " + producto.getStock() + " x " + producto.getPrecioCompra());
         saldoCaja -= costoTotal;
         System.out.println("COSTO TOTAL: " + costoTotal);
+        System.out.println("------------------------------");
     }
 
     public void realizarVenta(Map<Producto, Integer> productosVenta) {
@@ -125,6 +126,7 @@ public class Tienda {
         }
 
         System.out.println("TOTAL VENTA: " + totalVenta);
+        System.out.println("------------------------------");
         saldoCaja += totalVenta;
     }
 
@@ -145,6 +147,7 @@ public class Tienda {
 
                 });
         System.out.println("SALDO CAJA: " + saldoCaja);
+        System.out.println("------------------------------");
     }
 
     public void obtenerComestiblesConMenorDescuento(double descuento) {

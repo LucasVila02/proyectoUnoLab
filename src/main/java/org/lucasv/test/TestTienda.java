@@ -14,23 +14,23 @@ public class TestTienda {
     public static void main(String[] args) {
 
         try {
-            Tienda tiendaUno = new Tienda("Lucas", 32, 1000000);
+            Tienda tiendaUno = new Tienda("Lucas", 32, 100000);
 
             Limpieza detergente  = new Limpieza("Detergente", 12, 100, 10 ,false , TipoAplicacion.ROPA);
             detergente.aplicarDescuento(5);
-            tiendaUno.comprarProducto(detergente);
+            tiendaUno.realizarCompra(detergente);
 
             Bebida cocaCola = new Bebida("Coca cola", 12, 120, 20, false, 100,"12-11-2024", 5  );
             cocaCola.aplicarDescuento(10);
-            tiendaUno.comprarProducto(cocaCola);
+            tiendaUno.realizarCompra(cocaCola);
 
             Envasados atun  =  new Envasados("Atún", 6, 110, 20,false, 1, "12-11-2024", "Vidrio");
             atun.aplicarDescuento(10);
-            tiendaUno.comprarProducto(atun);
+            tiendaUno.realizarCompra(atun);
 
             Envasados choclo  =  new Envasados("Choclo", 6, 140, 20,false, 1, "12-11-2024", "Vidrio");
             choclo.aplicarDescuento(12);
-            tiendaUno.comprarProducto(choclo);
+            tiendaUno.realizarCompra(choclo);
 
             tiendaUno.mostrarBalanceTienda();
 
